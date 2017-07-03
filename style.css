@@ -41,7 +41,7 @@ body {
     transition: all 400ms;
 }
 #startButton {
-    background-color: #EA2755;
+    background-color: #D8244E;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -76,7 +76,7 @@ body {
 .game-page-topbar h2 {
     color: white;
     margin: 25px 70px 0 0;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
     text-align: center;
     font-family: raleway-thin;
@@ -104,12 +104,21 @@ body {
     overflow: hidden;
 }
 #nextButton {
-    background-color: #EA2755;
+    background-color: #D8244E;
     width: 100%;
     height: 70px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+}
+.next-div {
+    display: flex;
+    align-items: center;
+}
+.next-div img {
+    height: 15px;
+    margin-left: 8px;
+    margin-top: 6px;
 }
 #nextButton h2 {
     font-family: raleway;

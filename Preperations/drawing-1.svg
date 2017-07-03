@@ -124,11 +124,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="78.060272"
-     inkscape:cy="592.07855"
+     inkscape:zoom="11.313708"
+     inkscape:cx="202.44717"
+     inkscape:cy="511.12067"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4176"
      showgrid="false"
      inkscape:window-width="1600"
      inkscape:window-height="837"
@@ -143,7 +143,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -285,5 +285,41 @@
          x="7.7574563"
          id="tspan5149"
          sodipodi:role="line">START</tspan></text>
+    <g
+       style="fill:#ffc9d6;fill-opacity:1"
+       transform="matrix(1.886028,0,0,1.886028,-59.853637,-480.26088)"
+       id="g4171"
+       inkscape:export-filename="C:\Users\elias_000\Google Drive\Elias Andersson\Programmering\Never Have I Ever\img\arrow.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <g
+         id="g4176"
+         inkscape:export-filename="C:\Users\elias_000\Google Drive\Elias Andersson\Programmering\Never Have I Ever\img\arrow.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <rect
+           transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)"
+           y="478.86533"
+           x="-285.4314"
+           height="0.8286047"
+           width="5.8557277"
+           id="rect4173"
+           style="opacity:1;fill:#ffc9d6;fill-opacity:1;stroke:none;stroke-width:6;stroke-opacity:1"
+           inkscape:export-filename="C:\Users\elias_000\Google Drive\Elias Andersson\Programmering\Never Have I Ever\img\arrow.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <rect
+           style="opacity:1;fill:#ffc9d6;fill-opacity:1;stroke:none;stroke-width:6;stroke-opacity:1"
+           id="rect4180"
+           width="5.8557277"
+           height="0.8286047"
+           x="-479.68851"
+           y="279.57025"
+           transform="matrix(-0.70710678,-0.70710678,-0.70710678,0.70710678,0,0)"
+           inkscape:export-filename="C:\Users\elias_000\Google Drive\Elias Andersson\Programmering\Never Have I Ever\img\arrow.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+    </g>
   </g>
 </svg>
