@@ -1,0 +1,126 @@
+@font-face {
+   font-family: raleway;
+   src: url(Raleway-Regular.ttf);
+}
+@font-face {
+   font-family: raleway-thin;
+   src: url(Raleway-ExtraLight.ttf);
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom right, #0062FF, #00f3FF);
+    font-family: raleway;
+}
+#homePage {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0062FF, #00f3FF);
+}
+h1 {
+    color: #FCFCFC;
+    font-size: 42px;
+    font-weight: 300;
+    text-align: center;
+    font-family: raleway-thin;
+    padding-top: 20%;
+}
+#startButton {
+    background-color: #FF2B5C;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+#startButton h2 {
+    font-family: raleway;
+    font-size: 20px;
+    font-weight: 300;
+    color: #FFC9D6;
+    padding-top: 2px;
+}
+#gamePage {
+    height: 100vh;
+    display: none;
+    background: linear-gradient(to bottom right, #0062FF, #00f3FF);
+}
+.game-page-topbar {
+    display: flex;
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+}
+.close-button {
+    height: 20px;
+    padding: 25px;
+}
+.game-page-topbar h2 {
+    color: white;
+    margin: 25px 70px 0 0;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    font-family: raleway-thin;
+    width: 100%
+}
+.game-page-content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#statementsOutput {
+    color: #FCFCFC;
+    font-size: 30px;
+    padding: 0 5% 0 5%;
+    text-align: center;
+}
+.game-page-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#nextButton {
+    background-color: #FF2B5C;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+#nextButton h2 {
+    font-family: raleway;
+    font-size: 20px;
+    font-weight: 300;
+    color: #FFC9D6;
+    padding-top: 2px;
+}
+
+
+
+
+.ripple {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+.rippleEffect {
+    animation: rippleDrop .6s linear;
+}
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

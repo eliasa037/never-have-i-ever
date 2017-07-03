@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-filename="C:\Users\elias_000\Documents\Programmerings\close.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   sodipodi:docname="drawing-1.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4138">
+      <stop
+         id="stop4142"
+         offset="0"
+         style="stop-color:#0062ff;stop-opacity:1" />
+      <stop
+         id="stop4140"
+         offset="1"
+         style="stop-color:#00f3ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4138"
+       id="linearGradient4144"
+       x1="78.214287"
+       y1="385.57651"
+       x2="168.21428"
+       y2="544.86224"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter4431">
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood4433" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite4435" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="95.3"
+         result="blur"
+         id="feGaussianBlur4437" />
+      <feOffset
+         dx="28.1"
+         dy="33.5938"
+         result="offset"
+         id="feOffset4439" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite4441" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter5047">
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood5049" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite5051" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur5053" />
+      <feOffset
+         dx="-2.05669e-014"
+         dy="0.6"
+         result="offset"
+         id="feOffset5055" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite5057" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4138"
+       id="linearGradient5134"
+       x1="-28.428574"
+       y1="386.21936"
+       x2="60.821426"
+       y2="545.71936"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4"
+     inkscape:cx="78.060272"
+     inkscape:cy="592.07855"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       y="385.21936"
+       x="-28.928574"
+       height="160"
+       width="90"
+       id="rect5088"
+       style="opacity:1;fill:url(#linearGradient5134);fill-opacity:1;stroke:none;stroke-width:6;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:url(#linearGradient4144);fill-opacity:1;stroke:none;stroke-width:6;stroke-opacity:1"
+       id="rect4136"
+       width="90"
+       height="160"
+       x="78.571426"
+       y="385.21936" />
+    <rect
+       style="opacity:1;fill:#ff2b5c;fill-opacity:1;stroke:none;stroke-width:6;stroke-opacity:1"
+       id="rect4146"
+       width="90"
+       height="15"
+       x="78.571426"
+       y="530.21936" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.99611807px;line-height:125%;font-family:Raleway;-inkscape-font-specification:Raleway;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffc9d6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="113.30294"
+       y="539.98761"
+       id="text4148"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4150"
+         x="113.30294"
+         y="539.98761">NÄSTA </tspan></text>
+    <g
+       id="g4164"
+       transform="matrix(0.43697265,0,0,0.43697265,71.550839,303.6299)"
+       style="fill:#ffc9d6;fill-opacity:1">
+      <rect
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)"
+         y="479.00677"
+         x="-285.37283"
+         height="0.66291261"
+         width="5.8557277"
+         id="rect4160"
+         style="opacity:1;fill:#ffc9d6;fill-opacity:1;stroke:none;stroke-width:6;stroke-opacity:1" />
+      <rect
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"
+         style="opacity:1;fill:#ffc9d6;fill-opacity:1;stroke:none;stroke-width:6;stroke-opacity:1"
+         id="rect4162"
+         width="5.8557277"
+         height="0.66291261"
+         x="473.81396"
+         y="279.51709" />
+    </g>
+    <g
+       style="opacity:1;fill:#fcfcfc;fill-opacity:1"
+       transform="matrix(0.59824521,0.59824521,-0.59824521,0.59824521,277.43736,92.840902)"
+       id="g4183"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400">
+      <rect
+         style="opacity:1;fill:#fcfcfc;fill-opacity:1;stroke:none;stroke-width:6;stroke-opacity:1"
+         id="rect4179"
+         width="8.560976"
+         height="0.625"
+         x="88.706467"
+         y="410.04965" />
+      <rect
+         y="-93.299454"
+         x="406.08167"
+         height="0.625"
+         width="8.560976"
+         id="rect4181"
+         style="opacity:1;fill:#fcfcfc;fill-opacity:1;stroke:none;stroke-width:6;stroke-opacity:1"
+         transform="matrix(0,1,-1,0,0,0)" />
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4443"
+       y="395.9342"
+       x="106.70787"
+       style="font-style:normal;font-weight:normal;font-size:11.62148094px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fcfcfc;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:Raleway;-inkscape-font-specification:Raleway;fill:#fcfcfc;fill-opacity:1"
+         y="395.9342"
+         x="106.70787"
+         id="tspan4445"
+         sodipodi:role="line">Jag har aldrig...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.5px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="123.49463"
+       y="456.61221"
+       id="text5059"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5061"
+         x="124.4541"
+         y="456.61221"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Raleway;-inkscape-font-specification:Raleway;fill:#fcfcfc;fill-opacity:1">haft sex i mina </tspan><tspan
+         sodipodi:role="line"
+         x="123.49463"
+         y="465.98721"
+         id="tspan5063"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Raleway;-inkscape-font-specification:Raleway;fill:#fcfcfc;fill-opacity:1">föräldrars säng</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fcfcfc;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-17.655684"
+       y="412.1842"
+       id="text5110"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5112"
+         x="-17.655684"
+         y="412.1842"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Raleway;-inkscape-font-specification:Raleway;fill:#fcfcfc;fill-opacity:1">Jag har aldrig...</tspan></text>
+    <rect
+       y="530.21936"
+       x="-28.928574"
+       height="15"
+       width="90"
+       id="rect5145"
+       style="opacity:1;fill:#ff2b5c;fill-opacity:1;stroke:none;stroke-width:6;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text5147"
+       y="539.98761"
+       x="7.7574563"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.99611807px;line-height:125%;font-family:Raleway;-inkscape-font-specification:Raleway;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffc9d6;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="539.98761"
+         x="7.7574563"
+         id="tspan5149"
+         sodipodi:role="line">START</tspan></text>
+  </g>
+</svg>
