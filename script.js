@@ -2,11 +2,9 @@
 //click function on start button
 $("#startButton").click(function(){
 
-    //delayed toggle between home page and game page
-    setTimeout (function() {
-        $("#homePage").toggle();
-        $("#gamePage").toggle();
-    }, 200)
+    //toggle between home page and game page
+    $("#homePage").toggle();
+    $("#gamePage").toggle();
 
     //Display first statement
     progress = Math.floor((Math.random() * 39) + 1);
@@ -56,7 +54,7 @@ var statements = [
     "avbrutit en sexakt för att svara i telefon",
     "använt en hushållsartikel som en sexleksak och sedan lagt tillbaks den",
     "tagit bort ett inlägg från sociala medier på grund av för lite likes",
-    "slickat någon i anus",
+    "slickat någon i deras anus",
     "tagit kläder från smutstvätten för jag inte hade några rena",
     "ätit något som sett ut som godis, fast det inte varit godis",
     "flashat någon sexuell kroppsdel",
