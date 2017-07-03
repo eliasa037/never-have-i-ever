@@ -3,7 +3,9 @@
 $("#startButton").click(function(){
     $("#homePage").toggle();
     $("#gamePage").toggle();
-    progress = 0;
+
+    //Display first statement
+    progress = Math.floor((Math.random() * 39) + 1);
     document.getElementById("statementsOutput").innerHTML = statements[progress];
 });
 
@@ -13,8 +15,10 @@ $("#closeButton").click(function(){
     $("#gamePage").toggle();
 });
 
+//variable to display another string from statements array
 var progress = 0;
 
+//different statements to display
 var statements = [
     "haft sex på offentlig plats",
     "gjort 69:an",
@@ -61,13 +65,8 @@ var statements = [
 //Update the never have I ever statement
 $("#nextButton").click(function(){
     progress = Math.floor((Math.random() * 39) + 1);
-    console.log = progress;
     document.getElementById("statementsOutput").innerHTML = statements[progress];
-})
-
-
-
-
+});
 
 $("#nextButton").click(function (e) {
 
