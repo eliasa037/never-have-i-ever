@@ -8,7 +8,7 @@ $("#startButton").click(function(){
         $("#gamePage").toggle();
         $("#statementsOutput").fadeOut(0);
         $("#statementsOutput").fadeIn(600);
-    }, 100)
+    }, 100);
 
     //Display first statement
     progress = Math.floor((Math.random() * 39) + 1);
@@ -17,8 +17,10 @@ $("#startButton").click(function(){
 
 //Toggle from game page to home page
 $("#closeButton").click(function(){
-    $("#homePage").toggle();
-    $("#gamePage").toggle();
+    setTimeout( function() {
+        $("#homePage").toggle();
+        $("#gamePage").toggle();
+    }, 100);
 });
 
 //variable to display another string from statements array
