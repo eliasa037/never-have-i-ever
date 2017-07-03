@@ -1,8 +1,12 @@
 
-//Toggle from home page to game page
+//click function on start button
 $("#startButton").click(function(){
-    $("#homePage").toggle();
-    $("#gamePage").toggle();
+
+    //delayed toggle between home page and game page
+    setTimeout (function() {
+        $("#homePage").toggle();
+        $("#gamePage").toggle();
+    }, 200)
 
     //Display first statement
     progress = Math.floor((Math.random() * 39) + 1);
@@ -62,44 +66,43 @@ var statements = [
     "gått en omväg för att inte stöta på någon på stan",
 ]
 
-//Update the never have I ever statement
-$("#nextButton").click(function(){
+//Update the never have I ever statement and add ripple effect
+$("#nextButton").click(function (e){
+
+    $("#statementsOutput").fadeOut(300);
+    $("#statementsOutput").fadeIn(300);
     progress = Math.floor((Math.random() * 39) + 1);
-    document.getElementById("statementsOutput").innerHTML = statements[progress];
-});
+    setTimeout( function() {
+        document.getElementById("statementsOutput").innerHTML = statements[progress];
+    }, 300)
 
-$("#nextButton").click(function (e) {
+    // Setup
+    var posX = $(this).offset().left,
+        posY = $(this).offset().top,
+        buttonWidth = $(this).width(),
+        buttonHeight =  $(this).height();
 
-  // Remove any old one
-  $(".ripple").remove();
-
-  // Setup
-  var posX = $(this).offset().left,
-      posY = $(this).offset().top,
-      buttonWidth = $(this).width(),
-      buttonHeight =  $(this).height();
-
-  // Add the element
-  $(this).prepend("<span class='ripple'></span>");
+    // Add the element
+    $(this).prepend("<span class='ripple'></span>");
 
 
- // Make it round!
-  if(buttonWidth >= buttonHeight) {
-    buttonHeight = buttonWidth;
-  } else {
-    buttonWidth = buttonHeight; 
-  }
+    // Make it round!
+    if(buttonWidth >= buttonHeight) {
+        buttonHeight = buttonWidth;
+    } else {
+        buttonWidth = buttonHeight; 
+    }
 
-  // Get the center of the element
-  var x = e.pageX - posX - buttonWidth / 2;
-  var y = e.pageY - posY - buttonHeight / 2;
+    // Get the center of the element
+    var x = e.pageX - posX - buttonWidth / 2;
+    var y = e.pageY - posY - buttonHeight / 2;
 
 
-  // Add the ripples CSS and start the animation
-  $(".ripple").css({
-    width: buttonWidth,
-    height: buttonHeight,
-    top: y + 'px',
-    left: x + 'px'
-  }).addClass("rippleEffect");
+    // Add the ripples CSS and start the animation
+    $(".ripple").css({
+        width: buttonWidth,
+        height: buttonHeight,
+        top: y + 'px',
+        left: x + 'px'
+    }).addClass("rippleEffect");
 });

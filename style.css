@@ -20,9 +20,23 @@ h1 {
     color: #FCFCFC;
     font-size: 42px;
     font-weight: 300;
-    text-align: center;
     font-family: raleway-thin;
     padding-top: 20%;
+    text-align: center;
+}
+.home-page-content {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drink-img {
+    height: 250px;
+    margin: 0 auto;
+    display: block;
 }
 #startButton {
     background-color: #EA2755;
