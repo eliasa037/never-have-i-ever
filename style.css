@@ -16,13 +16,14 @@ body {
     height: 100vh;
     background: linear-gradient(to bottom right, #0062FF, #00f3FF);
 }
-h1 {
+.h1 {
     color: #FCFCFC;
     font-size: 42px;
     font-weight: 300;
     font-family: raleway-thin;
     padding-top: 20%;
     text-align: center;
+    transition: all 400ms;
 }
 .home-page-content {
     position: absolute;
@@ -37,6 +38,7 @@ h1 {
     height: 250px;
     margin: 0 auto;
     display: block;
+    transition: all 400ms;
 }
 #startButton {
     background-color: #EA2755;
@@ -117,7 +119,7 @@ h1 {
     padding-top: 8px;
 }
 
-
+/*animations*/
 .ripple {
   width: 0;
   height: 0;
@@ -130,10 +132,15 @@ h1 {
 .rippleEffect {
     animation: rippleDrop .6s linear;
 }
-
 @keyframes rippleDrop {
   100% {
     transform: scale(2);
     opacity: 0;
   }
+}
+.h1-animation {
+    opacity: 0;
+}
+.drink-img-animation {
+    opacity: 0;
 }

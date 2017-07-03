@@ -3,8 +3,12 @@
 $("#startButton").click(function(){
 
     //toggle between home page and game page
-    $("#homePage").toggle();
-    $("#gamePage").toggle();
+    setTimeout (function() {
+        $("#homePage").toggle();
+        $("#gamePage").toggle();
+        $("#statementsOutput").fadeOut(0);
+        $("#statementsOutput").fadeIn(600);
+    }, 100)
 
     //Display first statement
     progress = Math.floor((Math.random() * 39) + 1);
