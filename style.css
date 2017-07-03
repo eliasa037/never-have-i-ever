@@ -23,7 +23,6 @@ body {
     font-family: raleway-thin;
     padding-top: 20%;
     text-align: center;
-    transition: all 400ms;
 }
 .home-page-content {
     position: absolute;
@@ -35,10 +34,9 @@ body {
     align-items: center;
 }
 .drink-img {
-    height: 250px;
+    height: 200px;
     margin: 0 auto;
     display: block;
-    transition: all 400ms;
 }
 #startButton {
     background-color: #D8244E;
@@ -118,14 +116,14 @@ body {
 .next-div img {
     height: 14px;
     margin-left: 8px;
-    margin-top: 6px;
+    margin-top: 2px;
 }
 #nextButton h2 {
     font-family: raleway;
     font-size: 20px;
     font-weight: 300;
     color: #FFC9D6;
-    padding-top: 8px;
+    padding-top: 3px;
 }
 
 /*animations*/
@@ -146,10 +144,4 @@ body {
     transform: scale(2);
     opacity: 0;
   }
-}
-.h1-animation {
-    opacity: 0;
-}
-.drink-img-animation {
-    opacity: 0;
 }

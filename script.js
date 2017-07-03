@@ -1,29 +1,4 @@
-
-//click function on start button
-$("#startButton").click(function(){
-
-    //toggle between home page and game page
-    setTimeout (function() {
-        $("#homePage").toggle();
-        $("#gamePage").toggle();
-        $("#statementsOutput").fadeOut(0);
-        $("#statementsOutput").fadeIn(600);
-    }, 100);
-
-    //Display first statement
-    progress = Math.floor((Math.random() * 39) + 1);
-    document.getElementById("statementsOutput").innerHTML = statements[progress];
-});
-
-//Toggle from game page to home page
-$("#closeButton").click(function(){
-    setTimeout( function() {
-        $("#homePage").toggle();
-        $("#gamePage").toggle();
-    }, 100);
-});
-
-//variable to display another string from statements array
+//variable to call on a string from statements array
 var progress = 0;
 
 //different statements to display
@@ -68,17 +43,45 @@ var statements = [
     "badat naken med någon av de motsatta könet",
     "ramlat, snabbt ställt mig upp och låtsats som inget hänt",
     "gått en omväg för att inte stöta på någon på stan",
-]
+];
+
+//click function on start button
+$("#startButton").click(function(){
+
+    //toggle between home page and game page, add effect to statement text
+    setTimeout (function() {
+        $("#homePage").toggle();
+        $("#gamePage").toggle();
+        $("#statementsOutput").fadeOut(0);
+        $("#statementsOutput").fadeIn(600);
+    }, 100);
+
+    //Display first statement
+    progress = Math.floor((Math.random() * 39) + 1);
+    document.getElementById("statementsOutput").innerHTML = statements[progress];
+});
+
+//Toggle from game page to home page
+$("#closeButton").click(function(){
+    setTimeout( function() {
+        $("#homePage").toggle();
+        $("#gamePage").toggle();
+    }, 100);
+});
 
 //Update the never have I ever statement and add ripple effect
 $("#nextButton").click(function (e){
 
+    //fade effect to statements text
     $("#statementsOutput").fadeOut(300);
     $("#statementsOutput").fadeIn(300);
+
+    //display new statement
     progress = Math.floor((Math.random() * 39) + 1);
     setTimeout( function() {
         document.getElementById("statementsOutput").innerHTML = statements[progress];
     }, 300)
+    
 
     // Setup
     var posX = $(this).offset().left,
@@ -109,4 +112,5 @@ $("#nextButton").click(function (e){
         top: y + 'px',
         left: x + 'px'
     }).addClass("rippleEffect");
+
 });
