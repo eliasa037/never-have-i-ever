@@ -1,46 +1,3 @@
-var statements = [
-    "haft sex på offentlig plats",
-    "gjort 69:an",
-    "rökt cigg",
-    "haft sex när andra personer varit i samma rum",
-    "kysst någon av samma kön",
-    "filmat när jag haft sex",
-    "skickat nakenbilder på snap",
-    "tappat min telefon i en toalett",
-    "tittat på gayporr",
-    "använt en sexleksak",
-    "mätt min snopp",
-    "haft trekant",
-    "haft ett one night stand",
-    "haft sex med någon i rummet",
-    "haft analsex",
-    "strippat för någon",
-    "haft sex i en bil",
-    "rökt marijuana",
-    "smakat på sperma",
-    "gjort sönder något och inte berättat de",
-    "haft telefonsex",
-    "blivit påkommen under sex",
-    "knullat i en husvagn",
-    "varit med på TV",
-    "knullat med ett ex",
-    "tjuvkollat i någon annans telefon",
-    "tvivlat på min sexualitet",
-    "ljugit i den här leken",
-    "gjort bodyshots",
-    "avbrutit en sexakt för att svara i telefon",
-    "använt en hushållsartikel som en sexleksak och sedan lagt tillbaks den",
-    "tagit bort ett inlägg från sociala medier på grund av för lite likes",
-    "slickat någon i deras anus",
-    "tagit kläder från smutstvätten för jag inte hade några rena",
-    "ätit något som sett ut som godis, fast det inte varit godis",
-    "flashat någon sexuell kroppsdel",
-    "träffat en kändis",
-    "badat naken med någon av de motsatta könet",
-    "ramlat, snabbt ställt mig upp och låtsats som inget hänt",
-    "gått en omväg för att inte träffa någon på stan",
-];
-
 //click function on start button
 $("#startButton").click(function(){
 
@@ -52,6 +9,7 @@ $("#startButton").click(function(){
         $("#statementsOutput").fadeIn(600);
     }, 100);
 
+    //shuffle the statements array
     function shuffle(array) {
         var i = array.length,
             j = 0,
@@ -69,19 +27,20 @@ $("#startButton").click(function(){
         return array;
     }
 
+    //array of different statements, and variable to continue to the next statement
     var statements = shuffle([
-        "haft sex på offentlig plats",
-        "gjort 69:an",
+        "haft sex på en offentlig plats",
+        "kört 69:an",
         "rökt cigg",
         "haft sex när andra personer varit i samma rum",
         "kysst någon av samma kön",
-        "filmat när jag haft sex",
+        "filmat under sex",
         "skickat nakenbilder på snap",
         "tappat min telefon i en toalett",
         "tittat på gayporr",
         "använt en sexleksak",
         "mätt min snopp",
-        "haft trekant",
+        "haft en trekant",
         "haft ett one night stand",
         "haft sex med någon i rummet",
         "haft analsex",
@@ -103,7 +62,7 @@ $("#startButton").click(function(){
         "använt en hushållsartikel som en sexleksak och sedan lagt tillbaks den",
         "tagit bort ett inlägg från sociala medier på grund av för lite likes",
         "slickat någon i deras anus",
-        "tagit kläder från smutstvätten för jag inte hade några rena",
+        "tagit kläder från smutstvätten för jag inte haft några rena",
         "ätit något som sett ut som godis, fast det inte varit godis",
         "flashat någon sexuell kroppsdel",
         "träffat en kändis",
@@ -113,30 +72,28 @@ $("#startButton").click(function(){
     ]);
     var progress = 0;
 
-    console.log(statements);
-
     //Display first statement
     document.getElementById("statementsOutput").innerHTML = statements[progress];
 
-    //Update the never have I ever statement and add ripple effect
+    //Update the never have I ever statement
     $("#nextButton").click(function (e){
 
         //display new statement
         progress += 1;
+    
+        console.log(progress);
         setTimeout( function() {
             document.getElementById("statementsOutput").innerHTML = statements[progress];
         }, 300);
+
+        if(progress == statements.length) {
+            progress = 0;
+        }
+
     });
 });
 
-//Toggle from game page to home page
-$("#closeButton").click(function(){
-    setTimeout( function() {
-        $("#homePage").toggle();
-        $("#gamePage").toggle();
-    }, 100);
-});
-
+//click function on next button
 $("#nextButton").click(function (e){
 
     //fade effect to statements text
@@ -152,7 +109,6 @@ $("#nextButton").click(function (e){
     // Add the element
     $(this).prepend("<span class='ripple'></span>");
 
-
     // Make it round!
     if(buttonWidth >= buttonHeight) {
         buttonHeight = buttonWidth;
@@ -164,7 +120,6 @@ $("#nextButton").click(function (e){
     var x = e.pageX - posX - buttonWidth / 2;
     var y = e.pageY - posY - buttonHeight / 2;
 
-
     // Add the ripples CSS and start the animation
     $(".ripple").css({
         width: buttonWidth,
@@ -172,4 +127,12 @@ $("#nextButton").click(function (e){
         top: y + 'px',
         left: x + 'px'
     }).addClass("rippleEffect");
+});
+
+//Toggle from game page to home page
+$("#closeButton").click(function(){
+    setTimeout( function() {
+        $("#homePage").toggle();
+        $("#gamePage").toggle();
+    }, 100);
 });
