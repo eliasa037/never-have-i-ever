@@ -10,6 +10,8 @@ $("#startButtonOne").click(function(){
         $("#statementsOutput").fadeIn(600);
     }, 100);
 
+    $(".topbar").css("display", "none");
+
     //shuffle the statements array
     function shuffle(array) {
         var i = array.length,
@@ -133,6 +135,8 @@ $("#closeButton").click(function(){
         $("#homePageOne").toggle();
         $("#gamePage").toggle();
     }, 100);
+
+    $(".topbar").css("display", "flex");
 });
 
 
