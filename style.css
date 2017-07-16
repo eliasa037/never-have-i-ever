@@ -12,7 +12,30 @@ body {
     background: linear-gradient(to bottom right, #0062FF, #00f3FF);
     font-family: raleway;
 }
-#homePage {
+.topbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+.dot-container {
+    display: flex;
+}
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    margin: 5px;
+}
+.dot:first-of-type {
+    background-color: rgba(255, 255, 255, 0.8)
+}
+#homePageOne, #homePageTwo {
     height: 100vh;
     background: linear-gradient(to bottom right, #0062FF, #00f3FF);
 }
@@ -21,8 +44,8 @@ body {
     font-size: 42px;
     font-weight: 300;
     font-family: raleway-thin;
-    padding-top: 20%;
     text-align: center;
+    padding-top: 18%;
 }
 .home-page-content {
     position: absolute;
@@ -33,12 +56,13 @@ body {
     justify-content: center;
     align-items: center;
 }
-.drink-img {
-    height: 200px;
+.content-img {
+    width: 200px;
     margin: 0 auto;
     display: block;
+    position: absolute;
 }
-#startButton {
+.start-button {
     background-color: #D8244E;
     position: absolute;
     bottom: 0;
@@ -48,7 +72,7 @@ body {
     display: flex;
     justify-content: center;
 }
-#startButton h2 {
+.start-button h2 {
     font-family: raleway;
     font-size: 20px;
     font-weight: 300;

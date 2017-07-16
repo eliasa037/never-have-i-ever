@@ -1,9 +1,10 @@
+
 //click function on start button
-$("#startButton").click(function(){
+$("#startButtonOne").click(function(){
 
     //toggle between home page and game page, add effect to statement text
     setTimeout (function() {
-        $("#homePage").toggle();
+        $("#homePageOne").toggle();
         $("#gamePage").toggle();
         $("#statementsOutput").fadeOut(0);
         $("#statementsOutput").fadeIn(600);
@@ -69,6 +70,7 @@ $("#startButton").click(function(){
         "badat naken med någon av de motsatta könet",
         "ramlat, snabbt ställt mig upp och låtsats som inget hänt",
         "gått en omväg för att inte träffa någon på stan",
+        "haft sex i skolan",
     ]);
     var progress = 0;
 
@@ -80,16 +82,12 @@ $("#startButton").click(function(){
 
         //display new statement
         progress += 1;
-    
-        console.log(progress);
         setTimeout( function() {
             document.getElementById("statementsOutput").innerHTML = statements[progress];
         }, 300);
-
         if(progress == statements.length) {
             progress = 0;
         }
-
     });
 });
 
@@ -132,7 +130,33 @@ $("#nextButton").click(function (e){
 //Toggle from game page to home page
 $("#closeButton").click(function(){
     setTimeout( function() {
-        $("#homePage").toggle();
+        $("#homePageOne").toggle();
         $("#gamePage").toggle();
     }, 100);
+});
+
+
+$(document).on('swipeleft', '.ui-page', function(event){    
+    if(event.handled !== true) // This will prevent event triggering more than once
+    {    
+        var nextpage = $.mobile.activePage.next('[data-role="page"]');
+        // swipe using id of next page if exists
+        if (nextpage.length > 0) {
+            $.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
+        }
+        event.handled = true;
+    }
+    return false;         
+});
+
+$(document).on('swiperight', '.ui-page', function(event){     
+    if(event.handled !== true) // This will prevent event triggering more than once
+    {      
+        var prevpage = $(this).prev('[data-role="page"]');
+        if (prevpage.length > 0) {
+            $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
+        }
+        event.handled = true;
+    }
+    return false;            
 });

@@ -38,6 +38,62 @@
            style="opacity:1;fill:#666666;fill-opacity:0.68722468;stroke:none;stroke-width:6;stroke-opacity:1" />
       </g>
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4166">
+      <rect
+         style="opacity:1;fill:#808080;fill-opacity:0.82899631;stroke:none;stroke-width:8;stroke-opacity:1"
+         id="rect4168"
+         width="227.75926"
+         height="149"
+         x="-106.87963"
+         y="667.36218"
+         rx="0"
+         ry="0"
+         clip-path="none" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4220">
+      <g
+         id="g4222">
+        <rect
+           y="434.35086"
+           x="-107.12668"
+           height="115.25841"
+           width="202.23254"
+           id="rect4224"
+           style="opacity:1;fill:#ffffff;fill-opacity:0.59107804;stroke:none;stroke-width:10;stroke-opacity:1" />
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:0.59107804;stroke:none;stroke-width:10;stroke-opacity:1"
+           id="rect4226"
+           width="209.56877"
+           height="115.25841"
+           x="-205.76808"
+           y="514.60748" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4228">
+      <g
+         id="g4230">
+        <rect
+           y="434.35086"
+           x="-107.12668"
+           height="115.25841"
+           width="202.23254"
+           id="rect4232"
+           style="opacity:1;fill:#ffffff;fill-opacity:0.59107804;stroke:none;stroke-width:10;stroke-opacity:1" />
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:0.59107804;stroke:none;stroke-width:10;stroke-opacity:1"
+           id="rect4234"
+           width="209.56877"
+           height="115.25841"
+           x="-205.76808"
+           y="514.60748" />
+      </g>
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -46,9 +102,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="183.56494"
-     inkscape:cy="506.81543"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="145.44162"
+     inkscape:cy="493.08417"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -177,6 +233,76 @@
          clip-path="none"
          ry="0"
          rx="0" />
+    </g>
+    <g
+       id="g4250"
+       inkscape:export-filename="C:\Users\elias_000\Google Drive\Elias Andersson\Programmering\Never Have I Ever\img\finger.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         transform="matrix(0,-0.7340747,0.74191955,0,-349.4691,569.96671)"
+         clip-path="url(#clipPath4228)"
+         rx="51.425282"
+         ry="21.605742"
+         y="516.26294"
+         x="-17.960365"
+         height="65.121605"
+         width="29.39447"
+         id="rect4150"
+         style="opacity:1;fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:10.84030374;stroke-opacity:1" />
+      <rect
+         transform="matrix(0,-1,1,0,0,0)"
+         style="opacity:1;fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:8;stroke-opacity:1"
+         id="rect4152"
+         width="21.577738"
+         height="48.314995"
+         x="-604.73627"
+         y="33.55648"
+         ry="16.029722"
+         rx="37.749996" />
+      <rect
+         transform="matrix(0,-1,1,0,0,0)"
+         rx="37.749996"
+         ry="16.029722"
+         y="33.514137"
+         x="-626.31396"
+         height="48.314995"
+         width="21.577738"
+         id="rect4154"
+         style="opacity:1;fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:8;stroke-opacity:1" />
+      <rect
+         transform="matrix(0,-0.7340747,0.74191955,0,-349.4691,569.96671)"
+         clip-path="url(#clipPath4220)"
+         style="opacity:1;fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:10.84030374;stroke-opacity:1"
+         id="rect4156"
+         width="29.39447"
+         height="132.24373"
+         x="11.458634"
+         y="449.14084"
+         ry="21.605742"
+         rx="51.425282" />
+      <rect
+         transform="matrix(0,-0.64616951,0.8231274,0,-476.47029,576.82539)"
+         clip-path="url(#clipPath4166)"
+         rx="114.90793"
+         ry="77.950981"
+         y="599.86218"
+         x="-76.6875"
+         height="184.5"
+         width="160"
+         id="rect4158"
+         style="opacity:1;fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:10.96940893;stroke-opacity:1" />
+      <rect
+         clip-path="none"
+         transform="matrix(0.19764696,-0.98027327,0.98568462,0.16859963,0,0)"
+         rx="27.240114"
+         ry="27.242437"
+         y="164.49266"
+         x="-555.91748"
+         height="28.006281"
+         width="52.710144"
+         id="rect4173"
+         style="opacity:1;fill:#000000;fill-opacity:0;stroke:#ffffff;stroke-width:8.00174661;stroke-opacity:1" />
     </g>
   </g>
 </svg>

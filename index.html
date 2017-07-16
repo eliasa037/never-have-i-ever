@@ -5,20 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <script src="jquery-3.1.1.min.js"></script>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /> 
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 </head>
 <body>
 
-    <div id="homePage">
+    <div class="topbar" data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+      <a href="#article1" data-icon="home" >
+
+        <div class="dot-container">
+
+            <div class="dot">
+            </div>
+
+            <div class="dot">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="homePageOne" data-role="page" data-role="content">
 
         <h1 class="h1">Jag har aldrig...</h1>
 
         <div class="home-page-content">
 
-            <img src="img/drink.png" class="drink-img">
+            <img src="img/drink.png" class="content-img">
 
         </div>
 
-        <span id="startButton">
+        <span id="startButtonOne" class="start-button">
+
+            <h2>START</h2>
+
+        </span>
+
+    </div>
+
+    <div id="homePageTwo" data-role="page" data-role="content">
+
+        <h1 class="h1">Pekleken</h1>
+
+        <div class="home-page-content">
+
+            <img src="img/finger.png" class="content-img">
+
+        </div>
+
+        <span id="startButtonTwo" class="start-button">
 
             <h2>START</h2>
 
@@ -29,12 +66,8 @@
     <div id="gamePage">
 
         <div class="game-page-topbar">
-
-            <span id="closeButton">
-                
-                <img src="img/close.png" class="close-button">
-                
-            </span>
+  
+            <img src="img/close.png" class="close-button" id="closeButton">
 
             <h2>Jag har aldrig...</h2>
 
