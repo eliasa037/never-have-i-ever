@@ -2,17 +2,22 @@
 $("#hamburgerButton").click(function() {
     $("#menu").animate( {
         width: 'toggle'
-    }, 300);
+    }, 200);
 });
 $("#menuCloseButton").click(function() {
     setTimeout (function() {
         $("#menu").css("display", "none");
     }, 100);
 });
-$("#gameOneHomePage").on("swiperight",function(){
+$("body").on("swiperight",function(){
     $("#menu").animate ( {
         width: 'toggle'
-    }, 300);
+    }, 200);
+});
+$("body").on("swipeleft",function(){
+    $("#menu").animate ( {
+        width: 'toggle'
+    }, 200);
 });
 
 //toggle home pages

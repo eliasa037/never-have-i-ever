@@ -7,6 +7,9 @@
    src: url(fonts/Raleway-ExtraLight.ttf);
 }
 
+.ui-loader {
+    display: none;
+}
 body {
     margin: 0;
     background: linear-gradient(to bottom right, #0062FF, #00f3FF);
