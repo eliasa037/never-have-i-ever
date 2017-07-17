@@ -12,32 +12,36 @@ body {
     background: linear-gradient(to bottom right, #0062FF, #00f3FF);
     font-family: raleway;
 }
-.topbar {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 100%;
-    top: 0;
+#menu {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    background-color: #0F1108;
     z-index: 9999;
 }
-.dot-container {
-    display: flex;
+ul {
+    list-style-type: none;
+    margin-top: 40px;
 }
-.dot {
-    height: 8px;
-    width: 8px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
-    margin: 5px;
+li {
+    font-family:raleway-thin;
+    color: #FCFCFC;
+    font-size: 26px;
+    margin-bottom: 30px;
 }
-.dot:first-of-type {
-    background-color: rgba(255, 255, 255, 0.8)
+#hamburgerButton {
+    height: 20px;
+    padding: 25px;
+    z-index: 9998;
+    position: absolute;
 }
-#homePageOne, #homePageTwo {
+#gameOneHomePage, #gameTwoHomePage {
     height: 100vh;
     background: linear-gradient(to bottom right, #0062FF, #00f3FF);
+}
+#gameTwoHomePage {
+    display: none;
 }
 .h1 {
     color: #FCFCFC;
@@ -45,7 +49,7 @@ body {
     font-weight: 300;
     font-family: raleway-thin;
     text-align: center;
-    padding-top: 18%;
+    padding-top: 25%;
 }
 .home-page-content {
     position: absolute;
@@ -60,7 +64,6 @@ body {
     width: 200px;
     margin: 0 auto;
     display: block;
-    position: absolute;
 }
 .start-button {
     background-color: #D8244E;
@@ -79,7 +82,7 @@ body {
     color: #FFC9D6;
     padding-top: 13px;
 }
-#gamePage {
+#gameOneGamePage {
     height: 100vh;
     display: none;
     background: linear-gradient(to bottom right, #0062FF, #00f3FF);

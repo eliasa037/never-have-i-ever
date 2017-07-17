@@ -1,11 +1,38 @@
+//toggle menu
+$("#hamburgerButton").click(function() {
+    $("#menu").animate( {
+        width: 'toggle'
+    });
+});
+$("#menuCloseButton").click(function() {
+    $("#menu").animate( {
+        width: 'toggle'
+    });
+});
+
+//toggle home pages
+$("#neverHaveIever").click(function() {
+    $("#menu").animate( {
+        width: 'toggle'
+    });
+    $("#gameOneHomePage").css("display", "inline");
+    $("#gameTwoHomePage").css("display", "none");
+});
+$("#pointingGame").click(function() {
+    $("#menu").animate( {
+        width: 'toggle'
+    });
+    $("#gameTwoHomePage").css("display", "inline");
+    $("#gameOneHomePage").css("display", "none");
+});
 
 //click function on start button
 $("#startButtonOne").click(function(){
 
     //toggle between home page and game page, add effect to statement text
     setTimeout (function() {
-        $("#homePageOne").toggle();
-        $("#gamePage").toggle();
+        $("#gameOneHomePage").toggle();
+        $("#gameOneGamePage").toggle();
         $("#statementsOutput").fadeOut(0);
         $("#statementsOutput").fadeIn(600);
     }, 100);
@@ -132,35 +159,9 @@ $("#nextButton").click(function (e){
 //Toggle from game page to home page
 $("#closeButton").click(function(){
     setTimeout( function() {
-        $("#homePageOne").toggle();
-        $("#gamePage").toggle();
+        $("#gameOneHomePage").toggle();
+        $("#gameOneGamePage").toggle();
     }, 100);
 
     $(".topbar").css("display", "flex");
-});
-
-
-$(document).on('swipeleft', '.ui-page', function(event){    
-    if(event.handled !== true) // This will prevent event triggering more than once
-    {    
-        var nextpage = $.mobile.activePage.next('[data-role="page"]');
-        // swipe using id of next page if exists
-        if (nextpage.length > 0) {
-            $.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
-        }
-        event.handled = true;
-    }
-    return false;         
-});
-
-$(document).on('swiperight', '.ui-page', function(event){     
-    if(event.handled !== true) // This will prevent event triggering more than once
-    {      
-        var prevpage = $(this).prev('[data-role="page"]');
-        if (prevpage.length > 0) {
-            $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
-        }
-        event.handled = true;
-    }
-    return false;            
 });
