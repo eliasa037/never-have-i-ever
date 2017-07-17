@@ -7,24 +7,36 @@ $("#hamburgerButton").click(function() {
 $("#menuCloseButton").click(function() {
     setTimeout (function() {
         $("#menu").css("display", "none");
-    }, 100);
+    }, 200);
 });
 
 //toggle home pages
 $("#neverHaveIever").click(function() {
+
+    $(".first-option").css("color", "rgba(255, 255, 255, 0.3");
+
     setTimeout (function() {
         $("#menu").css("display", "none");
+        $("#gameOneHomePage").css("display", "inline");
+        $("#gameTwoHomePage").css("display", "none");
+        $("#gameOneGamePage").css("display", "none");
+        $("#gameTwoGamePage").css("display", "none");
+        $(".first-option").css("color", "#FCFCFC");
     }, 200);
-    $("#gameOneHomePage").css("display", "inline");
-    $("#gameTwoHomePage").css("display", "none");
 });
 
-$("#pointingGame").click(function() {
+$("#pointingGame").click(function(e) {
+
+    $(".second-option").css("color", "rgba(255, 255, 255, 0.3");
+
     setTimeout (function() {
         $("#menu").css("display", "none");
-    }, 100);
-    $("#gameTwoHomePage").css("display", "inline");
-    $("#gameOneHomePage").css("display", "none");
+        $("#gameTwoHomePage").css("display", "inline");
+        $("#gameOneHomePage").css("display", "none");
+        $("#gameOneGamePage").css("display", "none");
+        $("#gameTwoGamePage").css("display", "none");
+        $(".second-option").css("color", "#FCFCFC");
+    }, 200);
 });
 
 //click function on start button for game one
@@ -36,8 +48,7 @@ $("#startButtonOne").click(function(){
         $("#gameOneGamePage").toggle();
         $("#statementsOutputOne").fadeOut(0);
         $("#statementsOutputOne").fadeIn(600);
-        $("#hamburgerButton").css("display", "none");
-    }, 100);
+    }, 200);
 
     //shuffle the statements array
     function shuffle(array) {
@@ -120,15 +131,6 @@ $("#startButtonOne").click(function(){
     });
 });
 
-//Toggle from game page to home page on game one
-$("#closeButtonOne").click(function(){
-    setTimeout( function() {
-        $("#gameOneHomePage").toggle();
-        $("#gameOneGamePage").toggle();
-        $("#hamburgerButton").css("display", "inline");
-    }, 100);
-});
-
 $("#nextButtonOne").click( function(e) {
     //fade effect to statements text
     $("#statementsOutputOne").fadeOut(300);
@@ -172,8 +174,7 @@ $("#startButtonTwo").click(function(){
         $("#gameTwoGamePage").toggle();
         $("#statementsOutputTwo").fadeOut(0);
         $("#statementsOutputTwo").fadeIn(600);
-        $("#hamburgerButton").css("display", "none");
-    }, 100);
+    }, 200);
 
     //shuffle the statements array
     function shuffle(array) {
@@ -205,7 +206,7 @@ $("#startButtonTwo").click(function(){
         "Vem är snällast?",
         "Vem är smartast?",
         "Vem är charmigast?",
-        "Vem lagar mat sämst?"
+        "Vem lagar sämst mat?"
     ]);
     var progressTwo = 0;
 
@@ -224,15 +225,6 @@ $("#startButtonTwo").click(function(){
             progressTwo = 0;
         }
     });
-});
-
-//Toggle from game page to home page on game two
-$("#closeButtonTwo").click(function(){
-    setTimeout( function() {
-        $("#gameTwoHomePage").toggle();
-        $("#gameTwoGamePage").toggle();
-        $("#hamburgerButton").css("display", "inline");
-    }, 100);
 });
 
 $("#nextButtonTwo").click( function(e) {
