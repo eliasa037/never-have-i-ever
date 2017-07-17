@@ -5,36 +5,37 @@ $("#hamburgerButton").click(function() {
     });
 });
 $("#menuCloseButton").click(function() {
-    $("#menu").animate( {
-        width: 'toggle'
-    });
+    setTimeout (function() {
+        $("#menu").css("display", "none");
+    }, 100);
 });
 
 //toggle home pages
 $("#neverHaveIever").click(function() {
-    $("#menu").animate( {
-        width: 'toggle'
-    });
+    setTimeout (function() {
+        $("#menu").css("display", "none");
+    }, 200);
     $("#gameOneHomePage").css("display", "inline");
     $("#gameTwoHomePage").css("display", "none");
 });
+
 $("#pointingGame").click(function() {
-    $("#menu").animate( {
-        width: 'toggle'
-    });
+    setTimeout (function() {
+        $("#menu").css("display", "none");
+    }, 100);
     $("#gameTwoHomePage").css("display", "inline");
     $("#gameOneHomePage").css("display", "none");
 });
 
-//click function on start button
+//click function on start button for game one
 $("#startButtonOne").click(function(){
 
     //toggle between home page and game page, add effect to statement text
     setTimeout (function() {
         $("#gameOneHomePage").toggle();
         $("#gameOneGamePage").toggle();
-        $("#statementsOutput").fadeOut(0);
-        $("#statementsOutput").fadeIn(600);
+        $("#statementsOutputOne").fadeOut(0);
+        $("#statementsOutputOne").fadeIn(600);
         $("#hamburgerButton").css("display", "none");
     }, 100);
 
@@ -57,7 +58,7 @@ $("#startButtonOne").click(function(){
     }
 
     //array of different statements, and variable to continue to the next statement
-    var statements = shuffle([
+    var statementsOne = shuffle([
         "haft sex på en offentlig plats",
         "kört 69:an",
         "rökt cigg",
@@ -100,31 +101,38 @@ $("#startButtonOne").click(function(){
         "gått en omväg för att inte träffa någon på stan",
         "haft sex i skolan",
     ]);
-    var progress = 0;
+    var progressOne = 0;
 
-    //Display first statement
-    document.getElementById("statementsOutput").innerHTML = statements[progress];
+    //display first statement
+    document.getElementById("statementsOutputOne").innerHTML = statementsOne[progressOne];
 
     //Update the never have I ever statement
-    $("#nextButton").click(function (e){
+    $("#nextButtonOne").click(function (){
 
         //display new statement
-        progress += 1;
+        progressOne += 1;
         setTimeout( function() {
-            document.getElementById("statementsOutput").innerHTML = statements[progress];
+            document.getElementById("statementsOutputOne").innerHTML = statementsOne[progressOne];
         }, 300);
-        if(progress == statements.length) {
-            progress = 0;
+        if(progressOne == statementsOne.length) {
+            progressOne = 0;
         }
     });
 });
 
-//click function on next button
-$("#nextButton").click(function (e){
+//Toggle from game page to home page on game one
+$("#closeButtonOne").click(function(){
+    setTimeout( function() {
+        $("#gameOneHomePage").toggle();
+        $("#gameOneGamePage").toggle();
+        $("#hamburgerButton").css("display", "inline");
+    }, 100);
+});
 
+$("#nextButtonOne").click( function(e) {
     //fade effect to statements text
-    $("#statementsOutput").fadeOut(300);
-    $("#statementsOutput").fadeIn(300);
+    $("#statementsOutputOne").fadeOut(300);
+    $("#statementsOutputOne").fadeIn(300);
 
     // Setup
     var posX = $(this).offset().left,
@@ -155,11 +163,109 @@ $("#nextButton").click(function (e){
     }).addClass("rippleEffect");
 });
 
-//Toggle from game page to home page
-$("#closeButton").click(function(){
+//click function on start button for game two
+$("#startButtonTwo").click(function(){
+
+    //toggle between home page and game page, add effect to statement text
+    setTimeout (function() {
+        $("#gameTwoHomePage").toggle();
+        $("#gameTwoGamePage").toggle();
+        $("#statementsOutputTwo").fadeOut(0);
+        $("#statementsOutputTwo").fadeIn(600);
+        $("#hamburgerButton").css("display", "none");
+    }, 100);
+
+    //shuffle the statements array
+    function shuffle(array) {
+        var i = array.length,
+            j = 0,
+            temp;
+
+        while (i--) {
+
+            j = Math.floor(Math.random() * (i+1));
+
+             // swap randomly chosen element with current element
+            temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+    }
+
+    //statements for pointing game
+    var statementsTwo = shuffle([
+        "Vem kör sämst?",
+        "Vem kommer dö först",
+        "Vem är mest fuckboy/fuckgirl?",
+        "Vem förlora oskulden först?",
+        "Vem kommer dricka mest ikväll?",
+        "Vem är snyggast?",
+        "Vem kommer få ligga ikväll?",
+        "Vem är snällast?",
+        "Vem är smartast?",
+        "Vem är charmigast?"
+    ]);
+    var progressTwo = 0;
+
+    console.log(statementsTwo);
+
+    //display first statement
+    document.getElementById("statementsOutputTwo").innerHTML = statementsTwo[progressTwo];
+
+    //Update the never have I ever statement
+    $("#nextButtonTwo").click(function (){
+
+        //display new statement
+        progressTwo += 1;
+        setTimeout( function() {
+            document.getElementById("statementsOutputTwo").innerHTML = statementsTwo[progressTwo];
+        }, 300);
+        if(progressTwo == statementsTwo.length) {
+            progressTwo = 0;
+        }
+    });
+});
+
+//Toggle from game page to home page on game two
+$("#closeButtonTwo").click(function(){
     setTimeout( function() {
-        $("#gameOneHomePage").toggle();
-        $("#gameOneGamePage").toggle();
+        $("#gameTwoHomePage").toggle();
+        $("#gameTwoGamePage").toggle();
         $("#hamburgerButton").css("display", "inline");
     }, 100);
+});
+
+$("#nextButtonTwo").click( function(e) {
+    //fade effect to statements text
+    $("#statementsOutputTwo").fadeOut(300);
+    $("#statementsOutputTwo").fadeIn(300);
+
+    // Setup
+    var posX = $(this).offset().left,
+        posY = $(this).offset().top,
+        buttonWidth = $(this).width(),
+        buttonHeight =  $(this).height();
+
+    // Add the element
+    $(this).prepend("<span class='ripple'></span>");
+
+    // Make it round!
+    if(buttonWidth >= buttonHeight) {
+        buttonHeight = buttonWidth;
+    } else {
+        buttonWidth = buttonHeight; 
+    }
+
+    // Get the center of the element
+    var x = e.pageX - posX - buttonWidth / 2;
+    var y = e.pageY - posY - buttonHeight / 2;
+
+    // Add the ripples CSS and start the animation
+    $(".ripple").css({
+        width: buttonWidth,
+        height: buttonHeight,
+        top: y + 'px',
+        left: x + 'px'
+    }).addClass("rippleEffect");
 });
