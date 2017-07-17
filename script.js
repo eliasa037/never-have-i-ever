@@ -2,7 +2,7 @@
 $("#hamburgerButton").click(function() {
     $("#menu").animate( {
         width: 'toggle'
-    });
+    }, 300);
 });
 $("#menuCloseButton").click(function() {
     setTimeout (function() {
@@ -12,7 +12,7 @@ $("#menuCloseButton").click(function() {
 $("#gameOneHomePage").on("swiperight",function(){
     $("#menu").animate ( {
         width: 'toggle'
-    });
+    }, 300);
 });
 
 //toggle home pages
