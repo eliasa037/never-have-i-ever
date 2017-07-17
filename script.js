@@ -4,11 +4,6 @@ $("#hamburgerButton").click(function() {
         width: 'toggle'
     }, 200);
 });
-$("#menuCloseButton").click(function() {
-    setTimeout (function() {
-        $("#menu").css("display", "none");
-    }, 100);
-});
 $("body").on("swiperight",function(){
     $("#menu").animate ( {
         width: 'toggle'
@@ -18,6 +13,11 @@ $("body").on("swipeleft",function(){
     $("#menu").animate ( {
         width: 'toggle'
     }, 200);
+});
+$("#menuCloseButton").click(function() {
+    setTimeout (function() {
+        $("#menu").css("display", "none");
+    }, 150);
 });
 
 //toggle home pages
@@ -32,7 +32,7 @@ $("#neverHaveIever").click(function() {
         $("#gameOneGamePage").css("display", "none");
         $("#gameTwoGamePage").css("display", "none");
         $(".first-option").css("color", "#FCFCFC");
-    }, 100);
+    }, 150);
 });
 
 $("#pointingGame").click(function(e) {
@@ -46,7 +46,7 @@ $("#pointingGame").click(function(e) {
         $("#gameOneGamePage").css("display", "none");
         $("#gameTwoGamePage").css("display", "none");
         $(".second-option").css("color", "#FCFCFC");
-    }, 100);
+    }, 150);
 });
 
 //click function on start button for game one
@@ -58,7 +58,7 @@ $("#startButtonOne").click(function(){
         $("#gameOneGamePage").toggle();
         $("#statementsOutputOne").fadeOut(0);
         $("#statementsOutputOne").fadeIn(600);
-    }, 100);
+    }, 150);
 
     //shuffle the statements array
     function shuffle(array) {
@@ -184,7 +184,7 @@ $("#startButtonTwo").click(function(){
         $("#gameTwoGamePage").toggle();
         $("#statementsOutputTwo").fadeOut(0);
         $("#statementsOutputTwo").fadeIn(600);
-    }, 100);
+    }, 150);
 
     //shuffle the statements array
     function shuffle(array) {
