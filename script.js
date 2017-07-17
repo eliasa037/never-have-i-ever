@@ -196,7 +196,7 @@ $("#startButtonTwo").click(function(){
     //statements for pointing game
     var statementsTwo = shuffle([
         "Vem kör sämst?",
-        "Vem kommer dö först",
+        "Vem kommer dö först?",
         "Vem är mest fuckboy/fuckgirl?",
         "Vem förlora oskulden först?",
         "Vem kommer dricka mest ikväll?",
@@ -204,11 +204,10 @@ $("#startButtonTwo").click(function(){
         "Vem kommer få ligga ikväll?",
         "Vem är snällast?",
         "Vem är smartast?",
-        "Vem är charmigast?"
+        "Vem är charmigast?",
+        "Vem lagar mat sämst?"
     ]);
     var progressTwo = 0;
-
-    console.log(statementsTwo);
 
     //display first statement
     document.getElementById("statementsOutputTwo").innerHTML = statementsTwo[progressTwo];
