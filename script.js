@@ -35,9 +35,8 @@ $("#startButtonOne").click(function(){
         $("#gameOneGamePage").toggle();
         $("#statementsOutput").fadeOut(0);
         $("#statementsOutput").fadeIn(600);
+        $("#hamburgerButton").css("display", "none");
     }, 100);
-
-    $(".topbar").css("display", "none");
 
     //shuffle the statements array
     function shuffle(array) {
@@ -161,7 +160,6 @@ $("#closeButton").click(function(){
     setTimeout( function() {
         $("#gameOneHomePage").toggle();
         $("#gameOneGamePage").toggle();
+        $("#hamburgerButton").css("display", "inline");
     }, 100);
-
-    $(".topbar").css("display", "flex");
 });
