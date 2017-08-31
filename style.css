@@ -178,11 +178,11 @@ li {
   opacity: 1;
 }
 .rippleEffect {
-    animation: rippleDrop .6s linear;
+    animation: rippleDrop .4s linear;
 }
 @keyframes rippleDrop {
   100% {
-    transform: scale(2);
+    transform: scale(0.8);
     opacity: 0;
   }
 }

@@ -121,6 +121,10 @@ $("#startButtonOne").click(function(){
         "ramlat, snabbt ställt mig upp och låtsats som inget hänt",
         "gått en omväg för att inte träffa någon på stan",
         "haft sex i skolan",
+        "skickat en sexuell bild till fel person",
+        "kysst en kollega",
+        "legat med min chef",
+        "skämt ut mig på dansgolvet"
     ]);
     var progressOne = 0;
 
@@ -216,7 +220,18 @@ $("#startButtonTwo").click(function(){
         "Vem är snällast?",
         "Vem är smartast?",
         "Vem är charmigast?",
-        "Vem lagar sämst mat?"
+        "Vem lagar sämst mat?",
+        "Vem är galnast?",
+        "Vem tål minst alkohol?",
+        "Vem skulle delta i paradise hotel?",
+        "Vem är sötast?",
+        "Vem dansar sexigast?",
+        "Vem har finast röst?",
+        "Vem är roligast på fyllan?",
+        "Vem bajsar mest?",
+        "Vem har gjort de roligaste/galnaste på fyllan?",
+        "Vem är mest pinsam?",
+        "Vem kommer få ölmage?"
     ]);
     var progressTwo = 0;
 

@@ -105,9 +105,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="194.109"
-     inkscape:cy="424.52256"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="-70.181557"
+     inkscape:cy="391.92524"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -325,13 +325,13 @@
        id="rect4174"
        width="6.8316078"
        height="73.696342"
-       x="-575.21716"
-       y="-189.19563"
+       x="-575.2218"
+       y="-351.69562"
        transform="matrix(1.6322813e-5,-1,1,2.8732937e-5,0,0)" />
     <rect
        transform="matrix(1.6322813e-5,-1,1,2.8732937e-5,0,0)"
-       y="-189.19524"
-       x="-599.46716"
+       y="-351.69522"
+       x="-599.4718"
        height="73.696342"
        width="6.8316078"
        id="rect4169"
@@ -353,8 +353,14 @@
        id="rect4171"
        width="6.8316078"
        height="73.696342"
-       x="-622.59216"
-       y="-189.19485"
+       x="-622.5968"
+       y="-351.69485"
        transform="matrix(1.6322813e-5,-1,1,2.8732937e-5,0,0)" />
+    <g
+       id="g4180"
+       transform="translate(5.5000032,6.9999998)"
+       inkscape:export-filename="C:\Users\elias_000\Google Drive\Elias Andersson\Programmering\Never Have I Ever\img\hamburger.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
   </g>
 </svg>
